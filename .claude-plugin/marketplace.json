@@ -6,9 +6,7 @@
     {
       "name": "initech",
       "description": "Fleet coordination skill for initech agent fleet",
-      "source": "./",
-      "strict": true,
-      "skills": ["./skills/fleet-coordinator"]
+      "source": "./"
     }
   ]
 }

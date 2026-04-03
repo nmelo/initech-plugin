@@ -9,6 +9,15 @@ argument-hint: '[command]'
 
 You are coordinating an initech agent fleet through MCP tools. The fleet consists of specialized agents (engineers, QA, PM, shipper, growth) running in terminal panes managed by the initech TUI. Your job is to observe agent state, dispatch work, and keep the pipeline flowing.
 
+## Setup
+
+This plugin auto-registers the initech MCP server via `.mcp.json`. Two environment variables control the connection:
+
+- `INITECH_MCP_TOKEN` (required): bearer token printed in the TUI banner at startup
+- `INITECH_MCP_URL` (optional): defaults to `http://localhost:9200/mcp`
+
+If the MCP server is unreachable, fall back to CLI commands: `initech status`, `initech peek <agent>`, `initech send <agent> "message"`, `initech patrol`.
+
 ## Observation
 
 Three tools, three purposes. Pick the right one.

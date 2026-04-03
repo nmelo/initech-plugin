@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "initech": {
+      "type": "http",
+      "url": "${INITECH_MCP_URL:-http://localhost:9200/mcp}",
+      "headers": {
+        "Authorization": "Bearer ${INITECH_MCP_TOKEN}"
+      }
+    }
+  }
+}

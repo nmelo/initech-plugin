@@ -1,24 +1,13 @@
 {
   "name": "initech-plugin",
-  "owner": {
-    "name": "Nelson Melo"
-  },
-  "metadata": {
-    "description": "Fleet coordination skills for initech multi-agent terminal multiplexer",
-    "version": "1.0.0"
-  },
+  "owner": { "name": "Nelson Melo" },
+  "metadata": { "description": "initech fleet coordination", "version": "1.0.0" },
   "plugins": [
     {
       "name": "initech",
-      "source": ".",
-      "description": "Coordinate initech agent fleets: observation, dispatch, QA routing, engineer selection, and anti-patterns.",
-      "version": "1.0.0",
-      "author": {
-        "name": "Nelson Melo"
-      },
-      "repository": "https://github.com/nmelo/initech-plugin",
-      "license": "MIT",
-      "keywords": ["initech", "fleet", "multi-agent", "coordination", "mcp"],
+      "description": "Fleet coordination skill for initech agent fleet",
+      "source": "./",
+      "strict": false,
       "skills": ["./skills/fleet-coordinator"]
     }
   ]
